@@ -18,6 +18,9 @@ public class Meeting extends Task {
         if (topic.contains(query)) {
             return true;
         }
-        return project.contains(query);
+        if (project.contains(query)) {
+            return true;
+        }
+        return false;
     }
 }
